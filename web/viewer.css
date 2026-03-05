@@ -8570,12 +8570,17 @@ dialog :link{
     display:none;
   }
 }
+/* Centered viewer title */
 #mttgViewerLabel {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: #333;
-  margin-right: 16px;
-  display: inline-flex;
-  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+  letter-spacing: .3px;
+  
+  pointer-events: none; /* prevents interfering with toolbar buttons */
 }
