@@ -33,7 +33,12 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     <link rel="stylesheet" href="viewer.css" />
 <style>
-  /* Hide annotation editor tools: Draw (Ink), Text, Highlight */
+/* Hide Add or Edit Images (Stamp) button */
+#toolbarViewerRight #editorStampButton,
+#editorStampButton.toolbarButton {
+  display: none !important;
+}
+    /* Hide annotation editor tools: Draw (Ink), Text, Highlight */
   #editorInk,            /* Draw tool */
   #editorFreeText,       /* Text tool */
   #editorHighlight,      /* Highlight tool */
