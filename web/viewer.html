@@ -46,7 +46,13 @@ See https://github.com/adobe-type-tools/cmap-resources
   #secondaryEditorFreeText,
   #secondaryEditorHighlight {
     display: none !important;
-  }
+  
+  /* Hide Add/Edit Image (Stamp) tool */
+button[data-l10n-id*="editor_stamp"],
+#editorStamp,
+#editorStampButton {
+  display: none !important;
+}
 
   /* If your build groups editor buttons, hiding individual buttons is usually enough.
      If you still see an “Edit”/annotation toggle, we can hide that too in the next step. */
