@@ -32,7 +32,25 @@ See https://github.com/adobe-type-tools/cmap-resources
 <script src="../build/pdf.mjs" type="module"></script>
 
     <link rel="stylesheet" href="viewer.css" />
+<style>
+  /* Hide annotation editor tools: Draw (Ink), Text, Highlight */
+  #editorInk,            /* Draw tool */
+  #editorFreeText,       /* Text tool */
+  #editorHighlight,      /* Highlight tool */
 
+  /* Some builds use a different id for highlight */
+  #editorHighlightButton,
+
+  /* If the tools appear in the secondary/overflow toolbar */
+  #secondaryEditorInk,
+  #secondaryEditorFreeText,
+  #secondaryEditorHighlight {
+    display: none !important;
+  }
+
+  /* If your build groups editor buttons, hiding individual buttons is usually enough.
+     If you still see an “Edit”/annotation toggle, we can hide that too in the next step. */
+</style>
   <script src="viewer.mjs" type="module"></script>
   </head>
 
