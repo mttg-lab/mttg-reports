@@ -8570,3 +8570,12 @@ dialog :link{
     display:none;
   }
 }
+#mttgViewerLabel {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-right: 16px;
+  display: inline-flex;
+  align-items: center;
+}
